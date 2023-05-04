@@ -73,7 +73,7 @@ public class UserServiceImpl implements UserService {
 
   @Override
   public List<StudentLogs> getAllLogs() {
-    List<StudentLogs> studentLogsList = studentLogsRepository.findAll(Sort.by("id").descending());
+    List<StudentLogs> studentLogsList = studentLogsRepository.findAll();
     return studentLogsList;
   }
 

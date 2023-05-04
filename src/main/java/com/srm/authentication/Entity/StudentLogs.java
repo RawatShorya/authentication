@@ -14,7 +14,7 @@ import lombok.Data;
 public class StudentLogs {
   @Id
   @Column(name = "id")
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   Long id;
 
   @Column(name = "reg_no")
@@ -26,3 +26,4 @@ public class StudentLogs {
   @Column(name = "time")
   LocalTime time;
 }
+

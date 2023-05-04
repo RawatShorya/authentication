@@ -12,7 +12,7 @@ import lombok.Data;
 public class UniqueEntriesEntity {
   @Id
   @Column(name = "id")
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   Long id;
 
   @Column(name = "reg_no")
